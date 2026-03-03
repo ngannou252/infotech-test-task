@@ -1,0 +1,10 @@
+.tableBodyRow:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.tableBodyCell {
+  padding: 1vh 12px;
+  width: max-content;
+  min-width: 40px;
+}

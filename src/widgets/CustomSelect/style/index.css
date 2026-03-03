@@ -1,0 +1,63 @@
+.customSelectContainer {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 140px;
+  text-align: left;
+}
+
+.customSelectLabel {
+  font-size: 14px;
+}
+
+.customSelectTrigger {
+  border: 1px solid rgba(224, 225, 221, 0.2);
+  border-radius: 8px;
+  background: #0d1b2a;
+  color: inherit;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.customSelectArrow {
+  transition: transform 0.2s ease;
+}
+
+.customSelectArrow.open {
+  transform: rotate(180deg);
+}
+
+.customSelectDropdown {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #0d1b2a;
+  border: 1px solid rgba(224, 225, 221, 0.2);
+  border-radius: 8px;
+}
+
+.customSelectOption {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.customSelectOption:hover,
+.customSelectOption.selected {
+  background: rgba(224, 225, 221, 0.15);
+}

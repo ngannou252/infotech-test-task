@@ -1,0 +1,35 @@
+.paginationWrap {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.paginationButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.paginationButtons button {
+  border: 1px solid rgb(224 225 221 / 0.2);
+  background-color: transparent;
+  color: inherit;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.paginationButtons button:hover:not(:disabled) {
+  cursor: pointer;
+  background-color: rgb(224 225 221 / 0.1);
+}
+
+.paginationButtons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationButtons .activePage {
+  background-color: rgb(65 90 119);
+  border-color: rgb(119 141 169);
+}

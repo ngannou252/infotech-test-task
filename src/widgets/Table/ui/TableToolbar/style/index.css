@@ -1,0 +1,14 @@
+.tableToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.tableToolbarControls {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}

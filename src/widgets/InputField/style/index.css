@@ -1,0 +1,30 @@
+.inputWrapper {
+  border: 1px solid rgba(224, 225, 221, 0.2);
+  border-radius: 8px;
+  background: #0d1b2a;
+  color: inherit;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  height: fit-content;
+  overflow: clip;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.inputWrapper:hover,
+.inputWrapper:focus-within {
+  border-color: #646cff;
+}
+
+.inputWrapper input {
+  all: unset;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  font-family: inherit;
+}

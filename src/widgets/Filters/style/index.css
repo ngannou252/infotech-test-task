@@ -1,0 +1,83 @@
+.filterMenuButton {
+  border: 1px solid rgba(224, 225, 221, 0.2);
+  border-radius: 8px;
+  background: #0d1b2a;
+  color: inherit;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  height: fit-content;
+}
+
+.filterMenuButton:hover {
+  border-color: #646cff;
+  cursor: pointer;
+}
+
+.filterMenuIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.filtersGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.filterInputLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.filterResetButton {
+  margin-top: 8px;
+  border: 1px solid rgba(224, 225, 221, 0.2);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  padding: 10px 12px;
+}
+
+.filterResetButton:hover {
+  cursor: pointer;
+  border-color: #646cff;
+}
+
+.filtersModalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.filtersModalContent {
+  width: min(520px, 92vw);
+  max-height: 80vh;
+  overflow: visible;
+  background-color: #0d1b2a;
+  border: 1px solid rgb(224 225 221 / 0.2);
+  border-radius: 16px;
+  padding-inline: 18px;
+  padding-block: 25px;
+  text-align: left;
+}
+
+.filtersModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filtersModalBody {
+  display: grid;
+  gap: 8px;
+}
